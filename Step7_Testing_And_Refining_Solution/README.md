@@ -2,7 +2,7 @@
 
 ## Input values
 
-TRAIN_APPROACHING : Boolean (TRUE / FALSE)
+IS_TRAIN_APPROACHING : Boolean (TRUE / FALSE)
 
 IS_VEHICLE_PRESENT :Boolean (TRUE / FALSE)
 
@@ -45,11 +45,10 @@ ALERT_SIGNAL : ON / OFF
 The table below summarises the expected and actual outputs:
 | Case | IS_TRAIN_APPROACHING | IS_VEHICLE_PRESENT | Expected Output | Actual Output |
 | ---- | -------------------- | ----------------- | --------------- | ------------- |
-| 1 | FALSE | FALSE | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=TRUE, ALERT_SIGNAL=OFF | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF |
-| 2 | TRUE | FALSE | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF |
+| 1 | FALSE | FALSE | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF |
+| 2 | TRUE | FALSE | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=TRUE, ALERT_SIGNAL=OFF | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=TRUE, ALERT_SIGNAL=OFF |
 | 3 | FALSE | TRUE | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF | WARNING_LIGHTS=OFF, WARNING_BELL=OFF, GATE_LOWER=FALSE, ALERT_SIGNAL=OFF |
 | 4 | TRUE | TRUE | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=TRUE, ALERT_SIGNAL=ON | WARNING_LIGHTS=ON, WARNING_BELL=ON, GATE_LOWER=TRUE, ALERT_SIGNAL=ON |
-
 
 ## Possible Refinement in solution:
 
@@ -58,4 +57,3 @@ The table below summarises the expected and actual outputs:
 2. For train not arriving in the scheduled interval, some timeout can be added to accomodate the delay and ensure safety in the intersection.
 
 3. Multiple sensors can be used to confirm the position of the train as well as the vehicles to ensure that the gates are properly down and vehicles are completely out of the intersection when the train approaches.
-
