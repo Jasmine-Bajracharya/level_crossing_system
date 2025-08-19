@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The level crossing area is always an area that requires the gratest attention to safety measures. When the train arrives on the crossing, it must be ensured that the gates are closed in order to prevent any vehicle from getting in the way of the train. The system is designed with a logic of only raising the gates when the train is not approaching the level crossing else the gates must be kept down. It must also send an alert signal to the train to slow or stop if a vehicle is on the tracks while the train is approaching to provide enough time for the vehicle to clear from the tracks. The system must ensure that the gates are down or closed in the case of any system failure.
+The level crossing area is always an area that requires the greatest attention to safety measures. When the train arrives on the crossing, it must be ensured that the gates are closed in order to prevent any vehicle from getting in the way of the train. The system is designed with a logic of only raising the gates when the train is not approaching the level crossing else the gates must be kept down. It must also send an alert signal to the train to slow or stop if a vehicle is on the tracks while the train is approaching to provide enough time for the vehicle to clear from the tracks. The system must ensure that the gates are down or closed in the case of any system failure.
 
 ## Inputs and Outputs for the System
 

@@ -8,9 +8,9 @@ Using the sensors, the sensors send a signal inorder to know if the train is app
 
 ## Alternative solution 2: Time based solution for opening and closing of the gates.
 
-The system is driven by a clock and works according to the scheduled time of the trains. The system inputs the schduled time of the train arrival and closes the gate before certain time. The warning signals are sent before the gate closes inorder to ensure that the vehicles are cleared from the intersection before the train arrives. Assuming that the train passes at the scheduled time, the gates are then opened after the train has passed with certain delay added.
+The system is driven by a clock and works according to the scheduled time of the trains. The system inputs the scheduled time of the train arrival and closes the gate before certain time. The warning signals are sent before the gate closes inorder to ensure that the vehicles are cleared from the intersection before the train arrives. Assuming that the train passes at the scheduled time, the gates are then opened after the train has passed with certain delay added.
 
-For example if the train is scheduled to arrive at 1 PM and it takes 3 minutes for the train to pass, the warning lights and bells are activated at around 12:58 and the gates are lowered at 12:59 PM. The train then passes completely through the intersection by 1:03 PM and the gates are reopened after 2 minutes(that is at 1:05PM).
+For example, if the train is scheduled to arrive at 1 PM and it takes 3 minutes for the train to pass, the warning lights and bells are activated at around 12:58 and the gates are lowered at 12:59 PM. The train then passes completely through the intersection by 1:03 PM and the gates are reopened after 2 minutes(that is at 1:05PM).
 
 ## Research on Crossing Gate Control System : The Type F level Crossings - Callaghans Lane, NSW
 
